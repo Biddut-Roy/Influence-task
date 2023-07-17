@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,800&family=Poppins:wght@400;600;700&display=swap');
+
+*body {
+    font-family: Poppins;
+}
+
+/* start header */
+header nav {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+
+h2 {
+    color: #3A3A3A;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+ul li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+li a:hover {
+    background-color: rgb(134, 134, 241);
+}
+
+/* end header  */
+/* start a journey section */
+.journey {
+    display: flex;
+    width: 90%;
+    border: 2px solid rgb(22, 216, 64);
+    justify-content: space-between;
+    margin: 30px auto;
+    gap: 5%;
+}
+
+.journey-content {
+    width: 40%;
+    margin-left: 16px;
+}
+
+.journey-title {
+    color: #3A3A3A;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 0;
+
+}
+
+.journry-des {
+    margin: 10px;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+.btn-journey {
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    font-weight: 700;
+    padding: 10px 24px;
+}
+.journey-pic{
+    width: 40%;
+    border: 2px dotted yellow;
+}
+.journey-pic img{
+    width: 100%;
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+}
+/* end */
+/* start a company section */
+.company{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.company-logo{
+    width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive MEdia mobile devices */
+
+@media screen and (max-width: 576px) {
+    nav , .journey{
+        flex-direction: column;
+        text-align: center;
+    }
+    ul{
+        padding: 0;
+    }
+    ul li {
+      padding: 0 5px;
+    }
+    li a:hover {
+        background-color: rgb(134, 134, 241);
+    }
+    .journey-content, .journey-pic{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
